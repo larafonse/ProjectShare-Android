@@ -1,4 +1,4 @@
-# ProjectShare-Android
+# ProjectShare-iOS
 
 <img src='https://github.com/larafonse/Project03-Group5/blob/main/img/project_share_logo.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
