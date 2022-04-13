@@ -27,9 +27,9 @@ Users are able to post project ideas, open source projects, and or collaborative
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
-* Users should be able to login or create an account
+* [x] Users should be able to login or create an account
 * post projects
-* view all projects that are posted
+* [x] view all projects that are posted
 * comment on projects
 * update accounts.
 * Search through existing projects
