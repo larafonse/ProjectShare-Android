@@ -1,4 +1,6 @@
 # ProjectShare-iOS
+## Milestone 1
+<img src='http://g.recordit.co/ntW5a3JdGy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src='https://github.com/larafonse/Project03-Group5/blob/main/img/project_share_logo.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
