@@ -1,0 +1,6 @@
+framework module Pods_ProjectShareiOS {
+  umbrella header "Pods-ProjectShareiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
