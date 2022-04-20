@@ -10,7 +10,9 @@ import Parse
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+   
     @IBOutlet weak var tableView: UITableView!
+    
     
     var projects = [PFObject]()
     
@@ -18,6 +20,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        self.tableView.rowHeight = 250;
 
         // Do any additional setup after loading the view.
     }
@@ -40,15 +43,29 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectCell") as! ProjectCell
         
         let project = projects[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectCell") as! ProjectCell
         
-        cell.projectName.text = project["title"] as! String
+        cell.title.text = project["title"] as! String
         cell.username.text = project["username"] as! String
         cell.about.text = project["description"] as! String
+        
+        cell.about.text = project["description"] as! String
+        cell.technologies.text = project["tech_stack"] as! String
+
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "detail", sender: nil)
+        
+    }
+    
+    @IBAction func goToProfile(_ sender: Any) {
+        self.performSegue(withIdentifier: "profile", sender: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
