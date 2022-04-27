@@ -420,11 +420,10 @@
         <!--Navigation Controller-->
         <scene sceneID="Ayf-b5-mwD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygf-ua-dpi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oqg-KQ-9P6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CG0-7Z-Uv5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="CG0-7Z-Uv5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -432,6 +431,7 @@
                         <segue destination="VOi-Xe-WvU" kind="relationship" relationship="rootViewController" id="qHc-nx-kHz"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygf-ua-dpi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2658" y="67"/>
         </scene>

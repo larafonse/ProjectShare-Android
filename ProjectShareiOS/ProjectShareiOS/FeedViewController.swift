@@ -8,21 +8,53 @@
 import UIKit
 import Parse
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ResultsVC:UIViewController{
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
+
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate {
 
    
     @IBOutlet weak var tableView: UITableView!
     
+    let searchController = UISearchController(searchResultsController: ResultsVC())
+    
     
     var projects = [PFObject]()
+    var filteredProjects = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Search"
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        navigationItem.searchController = searchController
+        
         tableView.delegate = self
         tableView.dataSource = self
         self.tableView.rowHeight = 250;
 
         // Do any additional setup after loading the view.
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        filteredProjects = []
+        
+        if text == "" {
+            filteredProjects = projects
+        }
+        for p in projects{
+            let s = p["title"] as! String
+            if s.uppercased().contains(text.uppercased()){
+                filteredProjects.append(p)
+            }
+        }
+        tableView.reloadData()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -34,17 +66,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 (projects,error) in
                     if projects != nil{
                         self.projects = projects!
+                        self.filteredProjects = projects!
                         self.tableView.reloadData()
                     }
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return projects.count
+        return filteredProjects.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let project = projects[indexPath.row]
+        let project = filteredProjects[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectCell") as! ProjectCell
         
         cell.title.text = project["title"] as! String
