@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 import Parse
 
 class ResultsVC:UIViewController{
@@ -86,7 +87,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.about.text = project["description"] as! String
         cell.technologies.text = project["tech_stack"] as! String
-
+        
+        let imageFile = project["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        
+        cell.projectLogo.af.setImage(withURL: url)
         return cell
     }
     
@@ -97,6 +103,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func goToProfile(_ sender: Any) {
         self.performSegue(withIdentifier: "profile", sender: nil)
+    }
+    
+    @IBAction func toCompose(_ sender: Any) {
+        self.performSegue(withIdentifier: "compose", sender: nil)
     }
     
     /*

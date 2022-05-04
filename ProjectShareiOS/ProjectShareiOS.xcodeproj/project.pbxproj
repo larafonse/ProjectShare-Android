@@ -22,6 +22,9 @@
 		4D66C09E28067F8900A5583C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66C09D28067F8900A5583C /* SignUpViewController.swift */; };
 		4D66C0A02806855300A5583C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66C09F2806855300A5583C /* FeedViewController.swift */; };
 		4D66C0A228068E5100A5583C /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66C0A128068E5100A5583C /* ProjectCell.swift */; };
+		4DEECF1D2822315300EA0942 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEECF1C2822315300EA0942 /* DetailViewController.swift */; };
+		4DEECF1F2822341D00EA0942 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEECF1E2822341D00EA0942 /* ProfileViewController.swift */; };
+		4DEECF212822369B00EA0942 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEECF202822369B00EA0942 /* ComposeViewController.swift */; };
 		5B3E3A5C197560F34212279F /* Pods_ProjectShareiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7249FAC0D107E27F97E51B /* Pods_ProjectShareiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,9 @@
 		4D66C09D28067F8900A5583C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4D66C09F2806855300A5583C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		4D66C0A128068E5100A5583C /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		4DEECF1C2822315300EA0942 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4DEECF1E2822341D00EA0942 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4DEECF202822369B00EA0942 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		4E7249FAC0D107E27F97E51B /* Pods_ProjectShareiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectShareiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F848CE43B15ADDD7694E239 /* Pods-ProjectShareiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectShareiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectShareiOSTests/Pods-ProjectShareiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		78B73111519A7BE7E2594790 /* Pods-ProjectShareiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectShareiOSTests.release.xcconfig"; path = "Target Support Files/Pods-ProjectShareiOSTests/Pods-ProjectShareiOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				4D66C0692803DF6100A5583C /* AppDelegate.swift */,
+				4DEECF1C2822315300EA0942 /* DetailViewController.swift */,
 				4D66C06B2803DF6100A5583C /* SceneDelegate.swift */,
 				4D66C06F2803DF6100A5583C /* Main.storyboard */,
 				4D66C0722803DF6400A5583C /* Assets.xcassets */,
@@ -135,6 +142,8 @@
 				4D66C09D28067F8900A5583C /* SignUpViewController.swift */,
 				4D66C09F2806855300A5583C /* FeedViewController.swift */,
 				4D66C0A128068E5100A5583C /* ProjectCell.swift */,
+				4DEECF1E2822341D00EA0942 /* ProfileViewController.swift */,
+				4DEECF202822369B00EA0942 /* ComposeViewController.swift */,
 			);
 			path = ProjectShareiOS;
 			sourceTree = "<group>";
@@ -423,8 +432,11 @@
 				4D66C06A2803DF6100A5583C /* AppDelegate.swift in Sources */,
 				4D66C0A228068E5100A5583C /* ProjectCell.swift in Sources */,
 				4D66C06C2803DF6100A5583C /* SceneDelegate.swift in Sources */,
+				4DEECF212822369B00EA0942 /* ComposeViewController.swift in Sources */,
 				4D66C0A02806855300A5583C /* FeedViewController.swift in Sources */,
+				4DEECF1F2822341D00EA0942 /* ProfileViewController.swift in Sources */,
 				4D66C09E28067F8900A5583C /* SignUpViewController.swift in Sources */,
+				4DEECF1D2822315300EA0942 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
