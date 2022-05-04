@@ -38,16 +38,18 @@ Users are able to post project ideas, open source projects, and or collaborative
 
 ### 1. User Stories (Required and Optional)
 * [x] Users should be able to login or create an account
-* post projects
+* [x] post projects
 * [x] view all projects that are posted
-* comment on projects
-* update accounts.
-* Search through existing projects
-* Join Project
-* Chat feature to have students and mentors communicate with each other
+* [x] Search through existing projects
+* [x] Can view project in detail
+* [x] User can view joined projects
+* [x] Join Project
+* [x] Chat feature to have students and mentors communicate with each other
 
 
 **Optional Nice-to-have Stories**
+* update accounts.
+* comment on projects
 * Use Google maps to find projects near by
 * Different account types:
 * Student account : search and join projects
